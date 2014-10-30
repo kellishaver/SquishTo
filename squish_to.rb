@@ -49,7 +49,6 @@ module Paperclip
     end
 
     def is_jpeg?(file)
-      png = Regexp.new("\x89PNG".force_encoding("binary"))
       jpg = Regexp.new("\xff\xd8\xff\xe0\x00\x10JFIF".force_encoding("binary"))
       jpg2 = Regexp.new("\xff\xd8\xff\xe1(.*){2}Exif".force_encoding("binary"))
       case IO.read(file, 10)
