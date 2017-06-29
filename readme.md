@@ -8,12 +8,12 @@ Obviously, this can result in poor quality images depending on the input file an
 SquishTo can also slow down attachment processing and may not be suitable for very large images.
 
 
-###Installation
+### Installation
 
 To install SquishTo, create a `paperclip_procesors` folder inside of your Rails application `lib` directory. Then simply place `squish_to.rb` inside of it.
 
 
-###Usage
+### Usage
 
 To use Squishto, you'll need to add it as a processor inside of your model, like so:
 
@@ -28,7 +28,7 @@ To use Squishto, you'll need to add it as a processor inside of your model, like
     validates_attachment_presence :image
 
 
-###Customizing
+### Customizing
 
 If you'd like to compress to a final output size other than 500kb, create a `paperclip.rb` file inside of your Rails Applications' `config/initializers` directory and set the SquishTo output size like so:
 
